@@ -1,0 +1,241 @@
+body {
+    background-color: gray;
+    margin: 0;
+    overflow-x: hidden;
+}
+#ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    background-color: gray;
+    margin: 0;
+  }
+
+#ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+#li {  
+  float: left;
+}
+  
+#li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+li a:hover {
+  background-color: #111;
+}
+
+.linha{
+  border: 1px solid black;
+}
+.container{
+  width: 80vw;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+h2{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#subtitulos{
+  margin-left: 5%;
+}
+#subtitulosf{
+  text-align: center;
+}
+#subtitulosc{
+  color: crimson;
+  text-align: center;
+}
+
+.biografia{
+  width: 70vw;
+  margin-left: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+.rotacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 78vw;
+  margin-left: 2%;
+  font-size: larger;
+}
+.espaço{
+  width: 50vw;
+  margin-left: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+#morgan{
+  position: absolute;
+  border-radius: 10px;
+  left: 65vw;
+  top: 17vh;
+  width: 400px;
+}
+
+#imagens{
+  width: 800px;
+}
+
+.imgs{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+.secao{
+  width: 40vw;
+  height: 15vh;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secao > a{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+.texto-central{
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 90vw;
+  margin-left: 45%;
+  font-size: larger;
+}
+
+
+@media (min-width:1366px) and (max-width:1918px){
+  #morgan{
+    top: 24vh;
+    width: 300px;
+  }
+}
+
+@media (min-width:1280px) and (max-width:1365px){
+  #morgan{
+    top: 24vh;
+    width: 300px;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+  #morgan{
+    top: 30vh;
+    width: 240px;
+  }
+
+  #imagens{
+    width: 950px;
+  }
+}
+
+@media (min-width:820px) and (max-width:1024px){
+  #morgan{
+    width: 400px;
+    position: static;
+    margin-left:180px;
+  }
+  #imagens{
+    width: 700px;
+  }
+
+  .secao{
+    width: 95vw;
+    height: 20vh;
+  }
+}
+
+@media (min-width:768px) and (max-width:819px){
+  #morgan{
+    width: 400px;
+    position: static;
+    margin-left:180px;
+  }
+  #imagens{
+    width: 700px;
+  }
+
+  .secao{
+    width: 95vw;
+    height: 20vh;
+  }
+}
+
+@media (min-width:412px) and (max-width:767px){
+  #morgan{
+    width: 380px;
+    position: static;
+    margin-left: 14px;
+  }
+  #imagens{
+    width: 400px;
+  }
+
+  .secao{
+    width: 95vw;
+    height: 20vh;
+  }
+}
+
+@media (min-width:375px) and (max-width:411px){
+  #morgan{
+    width: 340px;
+    position: static;
+    margin-left: 14px;
+  }
+  #imagens{
+    width: 350px;
+  }
+
+  .secao{
+    width: 95vw;
+    height: 20vh;
+  }
+}
+
+@media (min-width:360px) and (max-width:374px){
+  #morgan{
+    width: 330px;
+    position: static;
+    margin-left: 14px;
+  }
+  #imagens{
+    width: 350px;
+  }
+
+  .secao{
+    width: 95vw;
+    height: 20vh;
+  }
+}
