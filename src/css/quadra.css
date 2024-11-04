@@ -1,0 +1,1681 @@
+body {
+    background-color:#35c235;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Barra de navegação*/
+
+#ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    background-color: gray;
+    margin: 0;
+  }
+
+#ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+#li {  
+  float: left;
+}
+  
+#li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+li a:hover {
+  background-color: #111;
+}
+
+/* Configurações Gerais*/
+
+.jogadoresImg{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.jogadores{
+  z-index: 2;
+}
+
+.brasao{
+  width: 120px;
+  border-radius: 100%;
+}
+
+.row{
+  display: flex;
+}
+
+.col-4{
+  display: flex;
+}
+
+.quadra{
+  position: relative;
+  left: 2vw;
+  background-color: rgb(233, 171, 55);
+  width: 84vw;
+  height: 67vh;
+  border: 1px solid white;
+  display: flex;
+}
+
+.quadraCasa{
+  border: 1px solid white;
+  width: 42vw;
+  height: 67vh;
+}
+
+.quadraFora{
+  border: 1px solid white;
+  width: 42vw;
+  height: 67vh;
+
+}
+
+.linha3{
+  position: absolute;
+  width: 34vw;
+  height: 67vh;
+  border: 1px solid white;
+  left: 25vw;
+  z-index: 1;
+}
+
+.comecar{
+  position: relative;
+  left: 39vw;
+  top: 2vh;
+}
+
+.comecar > button{
+  width: 100px;
+  height: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.jogadores .nomeJogador{
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.jogadores:hover .nomeJogador{
+  opacity: 1;
+}
+
+.caixaEsquemaCasa{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 16.6vw;
+  top: 76.7vh;
+  z-index: 3;
+}
+.caixaEsquemaCasa > button{
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: rgb(233, 233, 233);
+}
+
+#caixaEsquemaCasa{
+  left: 1000vw;
+}
+
+.caixaEsquemaCasa > button:hover{
+  background-color: lightgray;
+}
+
+.caixaEsquemaFora{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 81.1vw;
+  top: 76.7vh;
+}
+
+.caixaEsquemaFora > button{
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: rgb(233, 233, 233);
+}
+
+#caixaEsquemaFora{
+  left: 1000vw;
+}
+
+.caixaEsquemaFora > button:hover{
+  background-color: lightgray;
+}
+
+.primeirobtn{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.ultimobtn{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.escolhaLado{
+  width: 99vw;
+  height: 94.6vh;
+  background-color: rgba(0, 0, 0, 0.788);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5vh;
+  left: 0.5vw;
+  transition: margin-left 0.3s ease-in-out;
+  z-index: 3;
+}
+
+#escolhaLadoInicial{
+  left: 1000vw;
+}
+
+.caixa{
+  width: 95vw;
+  height: 60vh;
+  background-color:   whitesmoke;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.caixa2{
+  display: flex;
+  justify-content: center;
+}
+
+.caixa > h1{
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.caixa2 > img{
+  width: 400px;
+  border-radius: 100%;
+  margin: 0px 150px;
+  cursor: pointer;
+}
+
+#setaReta1C{
+  width: 150px;
+  position: absolute;
+  left: 100vw;
+
+}
+
+#setaReta2C{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaReta3C{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaReta4C{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaReta5C{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaCurva1C{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+  transform: perspective(1);
+}
+
+#setaCurva2C{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaCurva3C{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaReta1F{
+  width: 150px;
+  position: absolute;
+  left: 100vw;
+
+}
+
+#setaReta2F{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaReta3F{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaCurva1F{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaCurva2F{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+
+#setaCurva3F{
+  width: 200px;
+  position: absolute;
+  left: 100vw;
+}
+/* Configurações do Placa*/
+
+.placar{
+  display: flex;
+  position: relative;
+  top: 3vh;
+  left: 11.5vw;
+}
+
+.trapezio1{
+  position: relative;
+  left: 1.53vw;
+  width: 170px; /* Largura do trapezoide */
+  height: 0; /* Altura inicial */
+  border-bottom: 60px solid rgba(0, 0, 0, 0.795); /* Metade da altura desejada, cor de fundo */
+  border-left: 0px solid transparent; /* Metade da largura da base, lado esquerdo transparente */
+  border-right: 25px solid transparent; /* Metade da largura da base, lado direito transparente */
+}
+
+.trapezio2 {
+  position: relative;
+  left: 0.4svw;
+  top: -1.7vh;
+  width: 157px; /* Largura do trapezoide */
+  height: 0; /* Altura inicial */
+  border-bottom: 50px solid rgba(238, 228, 228, 0.856); /* Metade da altura desejada, cor de fundo */
+  border-left: 0px solid transparent; /* Metade da largura da base, lado esquerdo transparente */
+  border-right: 20px solid transparent; /* Metade da largura da base, lado direito transparente */
+}
+
+.trapezio2 > h1{
+  font-size: xx-large;
+  width: 8vw;
+  line-height: 5.2vh;
+  height: 5.2vh;
+  text-align: center;
+}
+
+.trapezio3{
+  position: relative;
+  top: -0.7vh;
+  transform: rotate(180deg);
+  width: 40px; /* Largura do trapezoide */
+  height: 0; /* Altura inicial */
+  border-bottom: 70px solid rgba(238, 228, 228, 0.856); /* Metade da altura desejada, cor de fundo */
+  border-left: 30px solid transparent; /* Metade da largura da base, lado esquerdo transparente */
+  border-right: 30px solid transparent; /* Metade da largura da base, lado direito transparente */
+}
+
+.trapezio3 > h1{
+  transform: rotate(180deg);  
+}
+
+.trapezio4 {
+  position: relative;
+  left: -1.46vw;
+  width: 170px; /* Largura do trapezoide */
+  height: 0; /* Altura inicial */
+  border-bottom: 60px solid rgba(0, 0, 0, 0.795); /* Metade da altura desejada, cor de fundo */
+  border-left: 25px solid transparent; /* Metade da largura da base, lado esquerdo transparente */
+  border-right: 0px solid transparent; /* Metade da largura da base, lado direito transparente */
+}
+
+.trapezio5 {
+  position: relative;
+  left: -0.7vw;
+  top: 0.45vh;
+  width: 157px; /* Largura do trapezoide */
+  height: 0; /* Altura inicial */
+  border-bottom: 50px solid rgba(238, 228, 228, 0.856); /* Metade da altura desejada, cor de fundo */
+  border-left: 20px solid transparent; /* Metade da largura da base, lado esquerdo transparente */
+  border-right: 0px solid transparent; /* Metade da largura da base, lado direito transparente */
+}
+
+.trapezio5 > h1{
+  font-size: xx-large;
+  margin: 0px;
+  width: 8vw;
+  line-height: 5.2vh;
+  height: 5.2vh;
+  text-align: center;
+} 
+
+/* Configurações Time da Casa*/
+
+.tecnicoCasa {
+  position: relative;
+  left: 11.1vw;
+}
+
+.tecnicoCasa p{
+  text-align: center;
+}
+
+.tecnicoCasaImg{
+  width: 100px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.brasaoCasa{
+  position: relative;
+  left: 12.3vw;
+  cursor: pointer;
+}
+
+.espacoLiberoCasa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background-color: lightgrey;
+  border: 1px solid white;
+  border-radius: 20px;
+  left: 0.4vw;
+  margin-bottom: 25px;
+}
+
+.espacoLiberoCasa img{
+  position: relative;
+  top: 2.4vh;
+}
+
+.espacoLiberoCasa p{
+  position: relative;
+  top: 1.7vh;
+}
+
+.espacoCentralCasa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background-color: lightgrey;
+  border: 1px solid white;
+  border-radius: 20px;
+  left: 0.4vw;
+  margin-bottom: 10px;
+}
+
+.espacoCentralCasa img{
+  position: relative;
+  top: 2.4vh;
+}
+
+.espacoCentralCasa p{
+  position: relative;
+  top: 1.7vh;
+}
+
+.botoesCasa{
+  position: relative;
+  top: 4vh;
+  left: 0.7vw;
+}
+
+.botoesCasa > button{
+  cursor: pointer;
+  width: 4vw;
+  height: 2.5vh;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 100px;
+}
+
+.comandosCasa{
+  position: relative;
+  left: 10vw;
+  top: 2vh;
+}
+
+.comandosCasa > button{
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  margin-left: 30px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+#titularCasa1{ /*ponteiro*/
+position: absolute;
+left: 6vw;
+top: 50vh;
+}
+
+#titularCasa2{ /*central/libero*/
+  position: absolute;
+  left: 30.5vw;
+  top: 50vh;
+
+}
+
+#titularCasa3{ /*oposto*/
+  position: absolute;
+  left: 30.5vw;
+  top: 27vh;
+
+}
+
+#titularCasa4{ /*ponteiro*/
+  position: absolute;
+  left: 30.5vw;
+  top: 4vh;
+
+}
+
+#titularCasa5{ /*libero/central*/
+  position: absolute;
+  left: 6vw;
+  top: 4vh;
+
+}
+
+#titularCasa6{ /*levantador*/
+  position: absolute;
+  left: 14vw;
+  top: 27vh;
+
+}
+
+.bolaSaqueCasa{
+  position: absolute;
+  left: 18vw;
+  top: 72vh;
+  display: none;
+  z-index: 4;
+}
+
+#bolaSaqueCasa{
+  width: 60px;
+}
+
+@keyframes saqueCasa1 {
+  0% {
+    transform: translateX(0);
+  }
+  50%{
+    transform: translate(26vw, -130px);
+    scale: 1.5;
+  }
+  100%{
+    transform: translate(65vw,-410px);
+    scale: 1;
+  }
+}
+
+@keyframes saqueCasa2 {
+  0% {
+    transform: translateX(0);
+  }
+  50%{
+    transform: translate(20vw);
+    scale: 1.5;
+  }
+  100%{
+    transform: translate(65vw);
+    scale: 1;
+  }
+}
+
+@keyframes saqueCasa3 {
+  0% {
+    transform: translateX(0);
+  }
+  50%{
+    transform: translate(20vw, -65px);
+    scale: 1.5;
+  }
+  100%{
+    transform: translate(65vw,-130px);
+    scale: 1;
+  }
+}
+
+.animaSaqueCasa1{
+  animation: saqueCasa1 3s ease-in-out;
+}
+
+.animaSaqueCasa2{
+  animation: saqueCasa2 3s ease-in-out;
+}
+
+.animaSaqueCasa3{
+  animation: saqueCasa3 3s ease-in-out;
+}
+
+/* Configurações Time de Fora*/
+
+.brasaoFora{
+  position: relative;
+  left: 21.5vh;
+  cursor: pointer;
+}
+
+.tecnicoFora {
+  position: relative;
+  left: 12vw;
+}
+
+.tecnicoForaImg{
+  width: 100px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.tecnicoFora p{
+  text-align: center;
+}
+
+.espacoLiberoFora{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background-color: lightgrey;
+  border: 1px solid white;
+  border-radius: 20px;
+  left: 3.5vw;
+  margin-bottom: 25px;
+}
+
+.espacoLiberoFora img{
+  position: relative;
+  top: 2.4vh;
+}
+
+.espacoLiberoFora p{
+  position: relative;
+  top: 1.7vh;
+}
+
+.espacoCentralFora{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background-color: lightgrey;
+  border: 1px solid white;
+  border-radius: 20px;
+  left: 3.5vw;
+  margin-bottom: 10px;
+}
+
+.espacoCentralFora img{
+  position: relative;
+  top: 2.4vh;
+}
+
+.espacoCentralFora p{
+  position: relative;
+  top: 1.7vh;
+}
+
+.botoesFora{
+  position: relative;
+  top: 4vh;
+  left: 3vw;
+}
+
+.botoesFora > button{
+  cursor: pointer;
+  width: 4vw;
+  height: 2.5vh;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 100px;
+}
+
+.comandosFora{
+  position: relative;
+  left: 67vw;
+  top: 2vh;
+}
+
+.comandosFora > button{
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  margin-left: 30px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+#titularFora1{
+  position: absolute;
+  left: 73vw;
+  top: 4vh;
+}
+
+#titularFora2{
+  position: absolute;
+  left: 47.5vw;
+  top: 4vh;
+}
+
+#titularFora3{
+  position: absolute;
+  left: 47.5vw;
+  top: 27vh;
+}
+
+#titularFora4{
+  position: absolute;
+  left: 47.5vw;
+  top: 50vh;
+}
+
+#titularFora5{
+  position: absolute;
+  left: 73vw; 
+  top: 50vh;
+}
+
+#titularFora6{
+  position: absolute;
+  left: 65vw;
+  top: 27vh;
+}
+
+.bolaSaqueFora{
+  position: absolute;
+  left: 79vw;
+  top: 33vh;
+  display: none;
+  z-index: 4;
+}
+
+#bolaSaqueFora{
+  width: 60px;
+}
+
+#info{
+  margin-left: 14vw;
+}
+
+@keyframes saqueFora1 {
+  0% {
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-20vw, 130px);
+    scale: 1.5;
+  }
+  100%{
+    transform: translate(-54vw,410px);
+    scale: 1;
+  }
+}
+
+@keyframes saqueFora2 {
+  0% {
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-20vw);
+    scale: 1.5;
+  }
+  100%{
+    transform: translate(-54vw, -40px);
+    scale: 1;
+  }
+}
+
+@keyframes saqueFora3 {
+  0% {
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-20vw, 65px);
+    scale: 1.5;
+  }
+  100%{
+    transform: translate(-61vw,170px);
+    scale: 1;
+  }
+}
+
+.animaSaqueFora1{
+  animation: saqueFora1 3s ease-in-out;
+}
+
+.animaSaqueFora2{
+  animation: saqueFora2 3s ease-in-out;
+}
+
+.animaSaqueFora3{
+  animation: saqueFora3 3s ease-in-out;
+}
+
+
+/*Animações*/
+
+@keyframes parabola1{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-3vw, -11.5vh);
+  }
+  100%{
+    transform: translate(0, -23vh);
+  }
+}
+
+.animaP1{
+  animation: parabola1 3s linear;
+}
+
+@keyframes parabola2{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(3vw, 11.5vh);
+  }
+  100%{
+    transform: translate(0, 23vh);
+  }
+}
+
+.animaP2 {
+  animation: parabola2 3s linear;
+}
+
+@keyframes parabola3{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-3vw, -11.5vh);
+  }
+  100%{
+    transform: translate(0, -23vh);
+  }
+}
+
+.animaP3{
+  animation: parabola3 3s linear;
+}
+
+@keyframes parabola4{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(3vw, 11.5vh);
+  }
+  100%{
+    transform: translate(0, 23vh);
+  }
+}
+
+.animaP4{
+  animation: parabola4 3s linear;
+}
+
+@keyframes reta1{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(0, -220px);
+  }
+}
+
+.animaR1{
+  animation: reta1 3s linear;
+}
+
+@keyframes reta2{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(0, 220px);
+  }
+}
+
+.animaR2{
+  animation: reta2 3s linear;
+}
+
+@keyframes bolaLevantador1{
+  0% {
+    transform: translate(-54vw, 400px);
+  }
+
+  100%{
+    transform: translate(-39vw, 170px);
+  }
+}
+
+.animaBolaLevantador1{
+  animation: bolaLevantador1 3s ease-in-out;
+}
+
+@keyframes bolaLevantador2{
+  0% {
+    transform: translate(-54vw, -60px);
+  }
+  100%{
+    transform: translate(-39vw, 170px);
+  }
+}
+
+.animaBolaLevantador2{
+  animation: bolaLevantador2 3s ease-in-out;
+}
+
+@keyframes bolaLevantador3{
+  0% {
+    transform: translate(-61vw, 180px);
+  }
+
+  100%{
+    transform: translate(-39vw, 170px);
+
+  }
+}
+
+.animaBolaLevantador3{
+  animation: bolaLevantador3 3s ease-in-out;
+}
+
+/*animações 5x1*/
+
+@keyframes recepcaoLevantadorP1{
+  0%{
+  transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(17.5vw, -23vh);
+  }
+}
+
+@keyframes recepcaoCentral2P3{
+  0%{
+  transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-10vw, 0vh);
+  }
+}
+
+@keyframes recepcaoPonteiro2P2{
+  0%{
+  transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, 11vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP5{
+  0%{
+  transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-8vw, 23vh);
+  }
+}
+
+@keyframes recepcaoLibero2P6{
+  0%{
+  transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(8vw, -23vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP2Volta{
+  0%{
+  transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, -52vh);
+  }
+}
+
+@keyframes recepcaoOpostoP4Volta{
+  0%{
+  transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, 50vh);
+  }
+}
+
+@keyframes recepcaoOpostoP3{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-9vw, 9vh);
+  }
+}
+
+@keyframes recepcaoCentral1P2{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-2vw, -30vh);
+  }
+}
+
+@keyframes recepcaoPonteiro1P1{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(0vw, -23vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP4{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, -2vh);
+  }
+}
+
+@keyframes recepcaoLiberoP5{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(8vw, -23vh);
+  }
+}
+
+@keyframes recepcaoLevantadorP6{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-16.5vw, 17vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP1Volta{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-8vw, 0vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP4Volta{
+  0%{
+    transform: translate(0vw,  0vh);
+  }
+  100%{
+    transform: translate(10.5vw, 3vh);
+  }
+}
+
+@keyframes recepcaoOpostoP3Volta{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(10.5vw, -6vh);
+  }
+}
+
+@keyframes recepcaoCentralP2Volta{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(10.5vw, 0vh);
+  }
+}
+
+@keyframes saqueCentralRedeP4{
+  0%{ 
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(3vw, 11.5vh);
+  }
+  100%{
+    transform: translate(5vw, 23vh);
+  }
+}
+
+@keyframes saquePonteiroRedeP3{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-3vw, -11.5vh);
+  }
+  100%{
+    transform: translate(5vw, -23vh);
+  }
+}
+
+@keyframes saqueCentralP1{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(0vw, -23vh);
+  }
+  100%{
+    transform: translate(10vw, -45.5vh);
+  }
+}
+
+@keyframes saquePonteiroP6{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-8vw, 0vh);
+  }
+}
+
+@keyframes saqueLevantadorP5{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(9vw, 26vh);
+  }
+}
+
+@keyframes recepcaoLevantadorP5{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(4.5vw, 20vh);
+  }
+}
+
+@keyframes recepcaoCentralP4{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-9vw, 25vh);
+  }
+}
+
+@keyframes recepcaoLiberoP1{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(0vw, -46vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP3{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, -4vh);
+  }
+}
+
+@keyframes saqueLiberoP6{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(0vw, -25vh);
+  }
+}
+
+@keyframes saquePonteiroP2{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(6vw, -29vh);
+  }
+}
+
+@keyframes saqueLevantadorP4{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, 29vh);
+  }
+}
+
+@keyframes saqueOpostoP1{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(10vw, 0vh);
+  }
+}
+
+@keyframes recepcaoLevantadorP4 {
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-5.5vw, 32vh);
+  }
+}
+
+@keyframes recepcaoCentralP3 {
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(0vw, 21vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP2 {
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, -4vh);
+  }
+}
+
+@keyframes recepcaoLiberoP6 {
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(0vw, -46vh);
+  }
+}
+
+@keyframes recepcaoOpostoP1 {
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(8vw, 0vh);
+  }
+}
+
+@keyframes recepcaoLevantadorVolta{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(5.5vw, 17vh);
+  }
+}
+
+@keyframes saqueLevantadorP3{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(5.5vw, 23vh);
+  }
+}
+
+@keyframes saqueCentralP3{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(5.5vw, -23vh);
+  }
+}
+
+@keyframes saquePonteiro2P2{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(0vw, -23vh);
+  }
+}
+
+@keyframes recepcaoLiberoP5{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(8vw, -23vh);
+  }
+}
+
+@keyframes recepcaoPonteiroP1{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, -4vh);
+  }
+}
+
+@keyframes recepcaoPonteiro2P1{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-8vw, -23vh);
+  }
+}
+
+@keyframes recepcaoOpostoP6{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(13vw, 17vh);
+  }
+}
+
+@keyframes recepcaoCentralP2{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(-0.5vw, -24vh);
+  }
+}
+
+@keyframes saqueOpostoP5{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(9vw, 26vh);
+  }
+}
+
+@keyframes saqueOpostoP4{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(11vw, 29vh);
+  }
+}
+
+@keyframes saqueLevantadorP1{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(8vw, 0vh);
+  }
+}
+
+@keyframes recepcaoOpostoP5{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(14vw, 25vh);
+  }
+}
+
+@keyframes saquePonteiroP1{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(0vw, -23vh);
+  }
+}
+
+@keyframes saqueOpostoP3{
+  0%{
+    transform: translate(0vw, 0vh);
+  }
+  100%{
+    transform: translate(8.5vw, 25vh);
+  }
+}
+
+/* rotação 1 time azul*/
+
+/*recepção*/
+.animaRotacao1RecepcaoCentral2 {
+  animation: recepcaoCentral1P2 3s ease-in-out;
+}
+
+.animaRotacao1RecepcaoOposto {
+  animation: recepcaoOpostoP3 3s ease-in-out infinite;
+}
+
+.animaRotacao1RecepcaoLibero {
+  animation: recepcaoLiberoP5 3s ease-in-out infinite;
+}
+
+.animaRotacao1RecepcaoPonteiro1 {
+  animation: recepcaoPonteiro1P1 3s ease-in-out infinite;
+}
+
+.animaRotacao1RecepcaoPonteiro2 {
+  animation: recepcaoPonteiroP4 3s ease-in-out infinite;
+}
+
+.animaRotacao1RecepcaoPonteiro1Volta{
+  animation: recepcaoPonteiroP1Volta 3s ease-in-out;
+}
+
+.animaRotacao1RecepcaoPonteiro4Volta{
+  animation: recepcaoPonteiroP4Volta 3s ease-in-out;
+}
+
+.animaRotacao1RecepcaoCentralVolta{
+  animation: recepcaoCentralP2Volta 3s ease-in-out;
+}
+
+.animaRotacao1RecepcaoLevantador{
+  animation: recepcaoLevantadorP6 3s ease-in-out;
+}
+
+.animaRotacao1RecepcaoOpostoVolta{
+  animation: recepcaoOpostoP3Volta 3s ease-in-out;
+}
+
+/*saque*/
+
+.animaRotacao1SaquePonteiro6{
+ animation: saquePonteiroP6 3s ease-in-out;
+}
+
+.animaRotacao1SaqueCentral1{
+ animation: saqueCentralP1 3s ease-in-out;
+}
+
+.animaRotacao1SaqueLevantador5{
+ animation: saqueLevantadorP5 3s ease-in-out;
+}
+
+.animaRotacao1SaquePonteiro4{
+  animation: saquePonteiroRedeP3 3s linear;
+}
+
+.animaRotacao1SaqueCentral3{
+  animation: saqueCentralRedeP4 3s linear;
+}
+
+/* rotação 2 time azul*/
+
+/*recepção*/
+
+
+.animaRotacao2RecepcaoLevantador5{
+  animation: recepcaoLevantadorP5 3s ease-in-out infinite;
+}
+
+.animaRotacao2RecepcaoCentral4{
+  animation: recepcaoCentralP4 3s ease-in-out infinite;
+}
+
+.animaRotacao2RecepcaoLibero1{
+  animation: recepcaoLiberoP1 3s ease-in-out infinite;
+}
+
+.animaRotacao2RecepcaoPonteiro3{
+  animation: recepcaoPonteiroP3 3s ease-in-out infinite;
+}
+
+/*saque*/
+
+.animaRotacao2SaqueLibero6{
+  animation: saqueLiberoP6 3s ease-in-out infinite;
+}
+
+.animaRotacao2SaquePonteiro2{
+  animation: saquePonteiroP2 3s ease-in-out infinite;
+}
+
+.animaRotacao2SaqueLevantador4{
+  animation: saqueLevantadorP4 3s ease-in-out infinite;
+}
+ 
+.animaRotacao2SaqueOposto1{
+  animation: saqueOpostoP1 3s ease-in-out infinite;
+}
+ 
+/* rotação 3 time azul*/
+
+/*recepção*/
+
+.animaRotacao3RecepcaoLevantador4{
+  animation: recepcaoLevantadorP4 3s ease-in-out;
+}
+
+.animaRotacao3RecepcaoCentral3{
+  animation: recepcaoCentralP3 3s ease-in-out;
+}
+
+.animaRotacao3RecepcaoPonteiro2{
+  animation: recepcaoPonteiroP2 3s ease-in-out;
+}
+
+.animaRotacao3RecepcaoLibero6{
+  animation: recepcaoLiberoP6 3s ease-in-out;
+}
+
+.animaRotacao3RecepcaoOposto1{
+  animation: recepcaoOpostoP1 3s ease-in-out;
+}
+
+.animaRotacao3RecepcaoLevantadorVolta{
+  animation: recepcaoLevantadorVolta 3s ease-in-out;
+}
+
+/*saque*/
+
+.animaRotacao3SaqueLevantador3{
+  animation: saqueLevantadorP3 3s ease-in-out;
+}
+
+.animaRotacao3SaqueCentral3{
+  animation: saqueCentralP3 3s ease-in-out;
+}
+
+.animaRotacao3SaquePonteiro2{
+  animation: saquePonteiro2P2 3s ease-in-out;
+}
+
+/* rotação 4 time azul*/
+
+/*recepção*/
+
+.animaRotacao4RecepcaoLibero5{
+  animation: recepcaoLiberoP5 3s ease-in-out;
+}
+
+.animaRotacao4RecepcaoPonteiro1{
+  animation: recepcaoPonteiroP1 3s ease-in-out;
+}
+
+.animaRotacao4RecepcaoPonteiro2{
+  animation: recepcaoPonteiro2P1 3s ease-in-out;
+}
+
+.animaRotacao4RecepcaoOposto6{
+  animation: recepcaoOpostoP6 3s ease-in-out;
+}
+
+.animaRotacao4RecepcaoCentral2{
+  animation: recepcaoCentralP2 3s ease-in-out;
+}
+
+/*saque*/
+
+.animaRotacao4SaqueOposto5{
+  animation: saqueOpostoP5 3s ease-in-out;
+}
+
+.animaRotacao4SaquePonteiro6{
+  animation: saquePonteiroP6 3s ease-in-out;
+}
+
+.animaRotacao4SaqueCentral1{
+  animation: saqueCentralP1 3s ease-in-out;
+}
+
+.animaRotacao4SaquePonteiro4{
+  animation: saquePonteiroRedeP3 3s linear;
+}
+
+.animaRotacao4SaqueCentral3{
+  animation: saqueCentralRedeP4 3s linear;
+}
+
+/* rotação 5 time azul*/
+
+/*recepção*/
+
+.animaRotacao5RecepcaoOposto5{
+  animation: recepcaoOpostoP5 3s ease-in-out;
+}
+
+.animaRotacao5RecepcaoCentral4{
+  animation: recepcaoCentralP4 3s ease-in-out infinite;
+}
+
+.animaRotacao5RecepcaoLibero1{
+  animation: recepcaoLiberoP1 3s ease-in-out infinite;
+}
+
+.animaRotacao5RecepcaoPonteiro3{
+  animation: recepcaoPonteiroP3 3s ease-in-out infinite;
+}
+
+
+/*saque*/
+
+.animaRotacao5SaqueLibero6{
+  animation: saqueLiberoP6 3s ease-in-out;
+}
+
+.animaRotacao5SaquePonteiro2{
+  animation: saquePonteiroP2 3s ease-in-out;
+}
+
+.animaRotacao5SaqueOposto4{
+  animation: saqueOpostoP4 3s ease-in-out;
+}
+ 
+.animaRotacao5SaqueLevantador1{
+  animation: saqueLevantadorP1 3s ease-in-out;
+}
+
+/* rotação 6 time azul*/
+
+/*recepção*/
+
+.animaRotacao6RecepcaoLevantdor1{
+  animation: recepcaoLevantadorP1 3s ease-in-out;
+}
+
+.animaRotacao6RecepcaoCentral3{
+  animation: recepcaoCentral2P3 3s ease-in-out;
+}
+
+.animaRotacao6RecepcaoPonteiro2{
+  animation: recepcaoPonteiro2P2 3s ease-in-out;
+}
+
+.animaRotacao6RecepcaoPonteiro5{
+  animation: recepcaoPonteiroP5 3s ease-in-out;
+}
+
+.animaRotacao6RecepcaoLibero6{
+  animation: recepcaoLibero2P6 3s ease-in-out;
+}
+
+.animaRotacao6RecepcaoPonteiro2Volta{
+  animation: recepcaoPonteiroP2Volta 3s ease-in-out;
+}
+
+.animaRotacao6RecepcaoOposto4Volta{
+  animation: recepcaoOpostoP4Volta 3s ease-in-out;
+}
+
+/*saque*/
+
+.animaRotacao6SaqueOposto3{
+  animation: saqueOpostoP3 3s ease-in-out;
+}
+ 
+.animaRotacao6SaquePonteiro1{
+  animation: saquePonteiroP1 3s ease-in-out;
+}
