@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/quadra.css">
+    <title>Ensino do voleibol por Site</title>
+</head>
+<body>
+    <ul id="ul">
+        <li id="li"><a href='/'>Inicio</a></li>
+        <li id="li"><a href="rotações.html">Rotações</a></li>
+        <li id="li"><a href='/src/html/Quadra'>Quadra</a></li>
+    </ul>
+    <br>
+    <div class="container">
+        <div class="row" id="info">
+            <div class="col-4">
+                <div class="tecnicoCasa">
+                    <img class="tecnicoCasaImg" src="/src/img/joseRicardo.png" alt="Foto do Técnico do time"><p class="nometecnico">José Ricardo</p>
+                </div>
+                <div class="brasaoCasa">
+                    <img class="brasao" onclick="pontuacao('casa')" src="/src/img/TimeAzul.png" alt="Brasão Time da Casa">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="placar">
+                    <div class="trapezio1">
+                        <div class="trapezio2">
+                            <h1 id="placarCasa">0</h1>
+                        </div>
+                    </div>
+                    <div class="trapezio3">
+                        <h1>VS</h1>
+                    </div>
+                    <div class="trapezio4">
+                        <div class="trapezio5">
+                            <h1 id="placarFora">0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="brasaoFora">
+                    <img class="brasao" onclick="pontuacao('fora')" src="/src/img/TimeVermelho.png" alt="Brasão Time da Fora">
+                </div>
+                <div class="tecnicoFora">
+                    <img class="tecnicoForaImg" src="/src/img/bola.png" alt="Foto do Técnico do time"><p class="nometecnico">Tecnico Táta</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="espacoLiberoCasa" id="espacoLiberoCasa">
+
+                </div>
+                <div class="espacoCentralCasa" id="espacoCentralCasa">
+
+                </div>
+                <div class="botoesCasa">
+                    <button onclick="rotacao('casa')"><img width="100px" src="/src/img/voltar.png" alt=""></button> <br>
+                    <button onclick="voltar()"><img width="100px" src="/src/img/regredir.png" alt=""></button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="quadra">
+                    <div class="quadraCasa">
+                        <div class="jogadores" id="titularCasa1"><img class="jogadoresImg" src="/src/img/ponteiroA.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularCasa2"><img class="jogadoresImg" src="/src/img/ponteiroA.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularCasa3"><img class="jogadoresImg" src="/src/img/levantadorA.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularCasa4"><img class="jogadoresImg" src="/src/img/ponteiroA.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularCasa5"><img class="jogadoresImg" src="/src/img/ponteiroA.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularCasa6"><img class="jogadoresImg" src="/src/img/ponteiroA.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                    </div>
+                    <div class="linha3">
+                        <div class="rede"></div>
+                    </div>
+                    <div class="quadraFora">
+                        <div class="jogadores" id="titularFora1"><img class="jogadoresImg" src="/src/img/ponteiroV.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularFora2"><img class="jogadoresImg" src="/src/img/ponteiroV.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularFora3"><img class="jogadoresImg" src="/src/img/levantadorV.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularFora4"><img class="jogadoresImg" src="/src/img/ponteiroV.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularFora5"><img class="jogadoresImg" src="/src/img/ponteiroV.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                        <div class="jogadores" id="titularFora6"><img class="jogadoresImg" src="/src/img/levantadorV.png" alt=""><p class="nomeJogador">Ponteiro</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="espacoLiberoFora" id="espacoLiberoFora">
+
+                </div>
+                <div class="espacoCentralFora" id="espacoCentralFora">
+
+                </div>
+                <div class="botoesFora">
+                    <button onclick="rotacao('fora')"><img width="100px" src="/src/img/voltar.png" alt=""></button> <br>
+                    <button onclick="botoes('saque')"><img width="120px" src="/src/img/saqueBotao.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="comandosCasa">
+                    <button id="esquemaCasa" onclick="botoes('esquemaCasa')">Esquema</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="comecar">
+                    <button id="comecar" onclick="botoes('comecar')">Começar</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="comandosFora">
+                    <button id="esquemaFora" onclick="botoes('esquemaFora')">Esquema</button>
+                </div>    
+            </div>
+        </div>
+        <div class="caixaEsquemaCasa" id="caixaEsquemaCasa">
+            <button class="primeirobtn" onclick="esquema('casa', '6x0')">6x0</button>
+            <button onclick="esquema('casa', '5x1')">5x1</button>
+            <button class="ultimobtn" onclick="esquema('casa', '4x2')">4x2</button>
+        </div>
+        <div class="caixaEsquemaFora" id="caixaEsquemaFora">
+            <button class="primeirobtn" onclick="esquema('fora', '6x0')">6x0</button>
+            <button onclick="esquema('fora', '5x1')">5x1</button>
+            <button class="ultimobtn" onclick="esquema('fora', '4x2')">4x2</button>
+        </div>
+        <div class="escolhaLado" id="escolhaLadoInicial">
+            <div class="caixa">
+                <h1>Qual Time começa com a bola?</h1>
+                <div class="caixa2">
+                    <img id="br1" src="/src/img/TimeAzul.png" alt="" onclick="ladoInicial('casa')">
+                    <img src="/src/img/TimeVermelho.png" alt="" onclick="ladoInicial('fora')">
+                </div>        
+            </div>
+        </div> <!-- Escolha de lado do time -->
+        <div class="bolaSaqueCasa" id="divBolaSaqueCasa">
+            <img id="bolaSaqueCasa" src="/src/img/bola.png" alt="">
+        </div>
+        <div class="bolaSaqueFora" id="divBolaSaqueFora">
+            <img id="bolaSaqueFora" src="/src/img/bola.png" alt="">
+        </div>
+        <div class="victory">
+            
+        </div>
+        <div class="setas">
+            <img id="setaReta1C" src="/src/img/seta-reta.png" alt="">
+            <img id="setaReta2C" src="/src/img/seta-reta.png" alt="">
+            <img id="setaReta3C" src="/src/img/seta-reta.png" alt="">
+            <img id="setaReta4C" src="/src/img/seta-reta.png" alt="">
+            <img id="setaReta5C" src="/src/img/seta-reta.png" alt="">
+            <img id="setaCurva1C" src="/src/img/seta-curva.png" alt="">
+            <img id="setaCurva2C" src="/src/img/seta-curva.png" alt="">
+            <img id="setaCurva3C" src="/src/img/seta-curva.png" alt="">
+            <img id="setaReta1F" src="/src/img/seta-reta.png" alt="">
+            <img id="setaReta2F" src="/src/img/seta-reta.png" alt="">
+            <img id="setaReta3F" src="/src/img/seta-reta.png" alt="">
+            <img id="setaCurva1F" src="/src/img/seta-curva.png" alt="">
+            <img id="setaCurva2F" src="/src/img/seta-curva.png" alt="">
+            <img id="setaCurva3F" src="/src/img/seta-curva.png" alt="">
+        </div>
+    </div>
+    <script src="/src/js/quadra.js"></script>
+</body>
+</html>
